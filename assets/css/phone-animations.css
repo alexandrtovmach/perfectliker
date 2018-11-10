@@ -1,0 +1,283 @@
+.phone-animation-container {
+  -moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  -moz-flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  width: 35%;
+  min-width: 25rem;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone-img {
+  width: 250px;
+  height: 500px;
+  margin: auto;
+  display: block;
+}
+.phone-animation-photo {
+  position: absolute;
+  border-radius: 4px;
+  width: 216px;
+  height: 435px;
+  background-color: white;
+  z-index: 0;
+  overflow: hidden;
+}
+.phone-animation-photo .phone-animation-footer {
+  position: absolute;
+  width: 100%;
+  background: white;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.phone-animation-photo .phone-animation-portrait {
+  height: 215px;
+  width: 215px;
+  background-color: #e6e6e6;
+  position: relative;
+}
+.phone-animation-photo .phone-animation-portrait img {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.phone-animation-photo .phone-animation-header {
+  font-size: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.phone-animation-photo .phone-animation-header a, .phone-animation-photo .phone-animation-header a:hover, .phone-animation-photo .phone-animation-header a:visited, .phone-animation-photo .phone-animation-header a:focus {
+  text-decoration: none;
+  transition: color 0.phone-animation-2s ease-in;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.phone-animation-photo .phone-animation-header .phone-animation-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #e6e6e6;
+  display: inline-block;
+  margin-right: 10px;
+}
+.phone-animation-follower {
+  height: 40px;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 700
+  /* box-shadow: 0 0 5px #cccccc; */
+}
+.phone-animation-subscribe-button {
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  border-radius: 4px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  padding: 4px 6px;
+  text-align: center;
+}
+.phone-animation-photo .phone-animation-header .phone-animation-follower-avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #e6e6e6;
+  display: inline-block;
+  margin-right: 10px;
+}
+.phone-animation-photo .phone-animation-likes {
+  font-size: 12px;
+}
+.phone-animation-photo .phone-animation-likes .phone-animation-number {
+  vertical-align: super;
+  display: inline-block;
+}
+.phone-animation-photo .phone-animation-likes .phone-animation-heart {
+  fill: #e6e6e6;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.phone-animation-photo .phone-animation-likes .phone-animation-heart.phone-animation-active {
+  fill: red;
+}
+.phone-animation-photo .phone-animation-likes .phone-animation-heart.animated-1 {
+  position: absolute;
+  left: 0;
+  animation: likeFadeLeft 1s infinite;
+}
+.phone-animation-photo .phone-animation-likes .phone-animation-heart.animated-2 {
+  position: absolute;
+  left: 0;
+  animation: likeFadeCenter 0.8s infinite;
+}
+.phone-animation-photo .phone-animation-likes .phone-animation-heart.animated-3 {
+  position: absolute;
+  left: 0;
+  animation: likeFadeRight 0.6s infinite;
+}
+.phone-animation-photo .phone-animation-comments {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.phone-animation-photo .phone-animation-comments a, .phone-animation-photo .phone-animation-comments a:hover, .phone-animation-photo .phone-animation-comments a:visited, .phone-animation-photo .phone-animation-comments a:focus {
+  text-decoration: none;
+  font-size: 12px;
+}
+.phone-animation-photo .follower-animate-1 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s infinite;
+}
+.phone-animation-photo .follower-animate-2 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 1s infinite;
+}
+.phone-animation-photo .follower-animate-3 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 2s infinite;
+}
+.phone-animation-photo .follower-animate-4 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 3s infinite;
+}
+.phone-animation-photo .follower-animate-5 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 4s infinite;
+}
+.phone-animation-photo .follower-animate-6 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 5s infinite;
+}
+.phone-animation-photo .follower-animate-7 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 6s infinite;
+}
+.phone-animation-photo .follower-animate-8 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 7s infinite;
+}
+.phone-animation-photo .follower-animate-9 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 8s infinite;
+}
+.phone-animation-photo .follower-animate-10 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 9s infinite;
+}
+.phone-animation-photo .follower-animate-11 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 10s infinite;
+}
+.phone-animation-photo .follower-animate-12 {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  animation: showUpFollower 20s 11s infinite;
+}
+
+@keyframes showUpFollower {
+  0% {
+    padding: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    padding: 10px;
+    opacity: 0;
+    height: 40px;
+  }
+  10% {
+    padding: 10px;
+    opacity: 1;
+    height: 40px;
+  }
+  45% {
+    padding: 10px;
+    opacity: 1;
+    height: 40px;
+  }
+  47% {
+    padding: 0;
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    padding: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes likeFadeLeft {
+  from {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(-60%,-100%,0);
+  }
+}
+
+@keyframes likeFadeCenter {
+  from {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(10%,-60%,0);
+  }
+}
+
+@keyframes likeFadeRight {
+  from {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(100%,-150%,0);
+  }
+}

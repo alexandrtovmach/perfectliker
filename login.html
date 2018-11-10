@@ -1,0 +1,126 @@
+<style>
+  .login-form {
+    width: 250px;
+    margin: 20vh auto;
+    border: 2px solid #e6e6e6;
+    padding: 20px;
+  }
+  .login-form img {
+    width: 40%;
+  }
+  .login-form .text-input {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .login-form p {
+    font-size: 80%;
+    opacity: 0.7;
+  }
+  .login-form .btn {
+    width: 100%;
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    padding: 5px 12px;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-family: sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+  }
+  .wrapper-gender-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  span.male-switch,
+  span.female-switch{
+    opacity: 0.8;
+    font-weight: normal;
+  }
+  .switch-gender {
+    position: relative;
+    height: 22px;
+    width: 46px;
+    margin:0 5px;
+    background: #3897f0;
+    border-radius: 100px;
+  }
+  .switch-label {
+    display: block;
+    float: left;
+    position: relative;
+    z-index: 2;
+    width: 21px;
+    height: 21px;
+    border-radius:100px;
+    cursor: pointer;
+  }
+  .switch-label:active {
+    font-weight: bold;
+  }
+  .switch-label-off {
+    padding-left: 2px;
+  }
+  .switch-label-on {
+    padding-right: 2px;
+  }
+  .switch-input {
+    display: none;
+  }
+  .switch-input:checked + .switch-label {
+    transition: 0.15s ease-out;
+  }
+  .switch-input:checked + .switch-label-on ~ .switch-selection {
+    left: 25px;
+  }
+  .switch-selection {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius:100px;
+    transition: left 0.15s ease-out;
+  }
+</style>
+
+<div class="login-form">
+  <img src="./images/instagram_logo.svg" />
+  <form action="./userpage.html">
+    <input type="text" class="text-input" placeholder="Username" />
+    <input type="password" class="text-input" placeholder="Password" />
+    <div class="switcher">
+      Gender:
+      <div class="wrapper-gender-input">
+        <span class="male-switch">Male</span>
+        <div class="switch-gender">
+          <input type="radio" class="switch-input" name="gender" value="male" id="male" checked>
+          <label for="male" class="switch-label switch-label-off">&nbsp;</label>
+          <input type="radio" class="switch-input" name="gender" value="female" id="female">
+          <label for="female" class="switch-label switch-label-on">&nbsp;</label>
+          <span class="switch-selection"></span>
+        </div>
+        <span class="female-switch">Female</span>
+      </div>
+    </div>
+    <input type="submit" value="Log in" class="btn"/>
+  </form>
+  <p>Logging you agree with <a href="./terms.html" alt="Terms of Service">Terms of Service</a></p>
+  <p>*Don't worry we won't store your password we will just generate the token to follow other users back</p>
+</div>
