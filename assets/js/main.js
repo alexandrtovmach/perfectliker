@@ -147,11 +147,13 @@
 	// Timer likes
 		const likeTimer = document.getElementById("countdown-timer-like");
 		const followerTimer = document.getElementById("countdown-timer-follower");
-		const likesStart = likeTimer.getAttribute("data-start-time");
-		const followerStart = followerTimer.getAttribute("data-start-time");
-
-		countdownTimer(likesStart, likeTimer, "like-interval");
-		countdownTimer(followerStart, followerTimer, "follower-interval");
+		if (likeTimer && followerTimer) {
+			const likesStart = likeTimer.getAttribute("data-start-time");
+			const followerStart = followerTimer.getAttribute("data-start-time");
+	
+			countdownTimer(likesStart, likeTimer, "like-interval");
+			countdownTimer(followerStart, followerTimer, "follower-interval");
+		}
 
 		function countdownTimer(startTime, element, name) {
 			let time = startTime.split(":");

@@ -69,6 +69,13 @@ mark {
 	pointer-events: auto !important;
 }
 
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5em;
+}
+
 input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
@@ -8585,3 +8592,25 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+	
+.feedback-item {
+	width: 100%;
+	height: 250px;
+	font-size: 200%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feedback-item > .feedback-text {
+	color: #000 !important;
+	border-left: 2px solid #000;
+	padding-left: 10px;
+}
+	
+.feedback-avatar {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
