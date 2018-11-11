@@ -82,9 +82,10 @@
 .phone-animation-follower > div {
   flex: 1 1 100%
 }
-.phone-animation-follower > div > h5 {
+.phone-animation-follower > div > span {
   font-weight: 100;
   margin: 0;
+  display: block;
 }
 .phone-animation-follower > div > p {
   font-weight: 700;
