@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.mobile-anim-block .phone-block .mobile-ver {
+  display: none;
+}
+
 .mobile-anim-block .main-phone {
   position: relative
 }
