@@ -73,7 +73,7 @@ mark {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5em;
+	padding: 5em 7em;
 }
 
 input::-moz-focus-inner {
