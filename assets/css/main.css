@@ -6731,7 +6731,7 @@ input, select, textarea {
 		.gallery.style2 button,
 		.gallery.style2 .button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 1px white;
+			box-shadow: 0 0 0 1px white;
 			color: #ffffff !important;
 		}
 
@@ -6740,7 +6740,7 @@ input, select, textarea {
 			.gallery.style2 input[type="button"]:hover,
 			.gallery.style2 button:hover,
 			.gallery.style2 .button:hover {
-				box-shadow: inset 0 0 0 1px #47D3E5;
+				box-shadow: 0 0 0 1px #47D3E5;
 				color: #47D3E5 !important;
 			}
 
@@ -6902,8 +6902,6 @@ input, select, textarea {
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background-color: rgba(0, 0, 0, 0.5);
-				opacity: 0;
 				padding: 3rem;
 				z-index: 1;
 				font-size: 0.8rem;
@@ -6927,7 +6925,12 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
-			.gallery.style2 article:hover .caption {
+			.gallery.style2 article .caption.feedback {
+				background-color: rgba(0, 0, 0, 0.5);
+				opacity: 0;
+			}
+
+			.gallery.style2 article:hover .caption.feedback {
 				opacity: 1;
 			}
 
